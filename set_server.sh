@@ -9,7 +9,7 @@ MANUAL="Usage: $0 [-i server_ip]"
 while getopts "i:" option; do
     case $option in
         i)
-            SERVER_IP=&OPTARG
+            SERVER_IP=$OPTARG
             ;;
         *)
             echo $MANUAL
