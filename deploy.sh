@@ -8,7 +8,7 @@ cd lion_django_app
 
 # venv 설치
 echo "start to install venv"
-sudo apt-get update && apt intall -y python3.8-venv
+sudo apt-get update && apt install -y python3.8-venv
 
 # venv 구성
 echo "start to make venv"
@@ -20,7 +20,7 @@ source venv/bin/activate
 
 # pip install
 echo "start to install requirements"
-pip intall -r requirements.txt
+pip install -r requirements.txt
 
 # # runserver
 # echo "start to runserver"
