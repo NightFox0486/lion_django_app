@@ -40,6 +40,14 @@ server {
 EOF"
 # symlink 생성
 echo "create symlink"
+
+TARGET_CONF=/etc/nginx/sites-enabled/django
+
+if [ -e $TARGET_CONF ]; then
+    echo "remove symlink"
+    sudo rm $TARGET_CONF
+fi
+
 sudo ln -s /etc/nginx/sites-available/django /etc/nginx/sites-enabled/
 # nginx 재시작
 echo "restart nginx"
