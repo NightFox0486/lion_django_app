@@ -1,3 +1,6 @@
+mkdir app
+cd app
+
 # git clone
 echo "start to clone"
 git clone https://github.com/mixkio/lion_django_app.git
